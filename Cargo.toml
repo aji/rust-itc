@@ -1,0 +1,8 @@
+[package]
+name = "rust-itc"
+version = "0.0.1"
+authors = ["Alex Iadicicco <alex@ajitek.net>"]
+
+[lib]
+name = "itc"
+path = "src/lib.rs"
