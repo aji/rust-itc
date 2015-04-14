@@ -14,6 +14,10 @@ pub enum Ident {
 }
 
 impl Ident {
+    pub fn seed() -> Ident {
+        Ident::One
+    }
+
     pub fn split(&self) -> (Ident, Ident) {
         use Ident::*;
 
@@ -144,6 +148,10 @@ impl PartialEq for Event {
 }
 
 impl Event {
+    pub fn seed() -> Event {
+        Event::Leaf(0)
+    }
+
     fn eq_real(&self, other: &Event) -> bool {
         use Event::*;
 
